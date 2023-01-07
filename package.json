@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf dist/*",
     "build-ts": "tsc copy-assets",
-    "start": "npm run serve",
+    "start": "npm run serve-prod",
     "dev": "concurrently npm:watch:*",
     "watch:node": "nodemon dist/index.js",
     "serve-prod": "pm2 start dist/index.js",
